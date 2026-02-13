@@ -1,0 +1,14 @@
+/*---footer---*/
+.footer{
+  background-color:#1f5bb5;
+  color:white;
+  text-align:center;
+  font-family:Arial;
+}
+  .footer-top{
+  display:flex;
+  justify-content:space-between;
+  padding:15px;
+  border-bottom:2px solid pink;
+
+  }
