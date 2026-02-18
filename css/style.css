@@ -1,14 +1,28 @@
 /*---footer---*/
-.footer{
-  background-color:#1f5bb5;
-  color:white;
-  text-align:center;
-  font-family:Arial;
+body {
+  margin: 0;
+  padding: 0;
 }
-  .footer-top{
-  display:flex;
-  justify-content:space-between;
-  padding:15px;
-  border-bottom:2px solid pink;
 
-  }
+.footer {
+  background-color: #1f5bb5;
+  color: white;
+  text-align: center;
+  font-family: Arial;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 2px solid pink;
+
+}
+
+header {
+  background-color: #1f5bb5;
+}
+
+.title {
+  margin-top: 0px;
+}
