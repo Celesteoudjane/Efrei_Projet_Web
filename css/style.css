@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 .footer {
@@ -15,14 +16,139 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  border-bottom: 2px solid pink;
+  border-bottom: 2px solid #FF63E1;
 
 }
 
 header {
   background-color: #1f5bb5;
+  border: solid;
+  border-color: #FF63E1;
 }
 
-.title {
+header .title {
   margin-top: 0px;
+  color: white;
+  text-align: center;
+  
 }
+
+header .ligne{
+  border-block-end: solid;
+  border-block-end-color:#FF63E1;
+  writing-mode: horizontal-tb;
+  margin-block-start: 0px;
+}
+
+header .links {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: baseline;
+  align-items: center;
+  margin-right: 70px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header .lien{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+header .lien:hover{
+  text-decoration: underline;
+  color: #FF63E1;
+}
+
+header #btnextern{
+  border:solid;
+  border-radius: 20px;
+  border-color: #FF63E1;
+  background-color: #163767;
+
+}
+
+/* carrousselle */
+
+div ul{
+  width: 100vw;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  gap: 4vw;
+
+}
+
+ul li {
+  list-style-type: none;
+  background-color: #eeeeee;
+  /* border: 1px solid #dddddd; */
+  /* padding: 20px; */
+
+  flex: 0 0 100%;
+
+
+}
+
+ul li:nth-child(even) {
+  background-color:#FF63E1;
+}
+
+ul {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+li {
+  scroll-snap-align: center;
+}
+
+ul {
+  scroll-marker-group: after;
+}
+
+ul::scroll-marker-group {
+  position: absolute;
+  position-anchor: --my-carousel;
+  top: calc(anchor(bottom) - 70px);
+  justify-self: anchor-center;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+li::scroll-marker {
+  content: attr(data-accName);
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: 16px;
+}
+
+li::scroll-marker:target-current {
+  background-color: black;
+}
+
+.img_car{
+  width: 100%;  
+}
+
+.carouselle{
+  width: 60%;
+
+}
+
+.bigCarousel{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.carouselTexte{
+  width: 40%;
+}
+
