@@ -5,7 +5,6 @@
     <title>Contact</title>
     <link href="../css/style.css" rel="stylesheet" />
 </head>    
-<<<<<<< HEAD
     <?php include ("../include/header.php"); ?>
 
     <body>
@@ -51,6 +50,5 @@
 
 
     </body>
-=======
-    <?php include ("../include/header.php"); ?>
->>>>>>> 70b5b3a1b7392bc9f9f31da065a680f009c45d8e
+    
+    <?php include ("../include/footer.php"); ?>
