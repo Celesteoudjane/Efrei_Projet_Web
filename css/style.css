@@ -173,6 +173,7 @@ th, td {
 
 /* SECTION PRINCIPALE */
 .hero {
+    background-image: url("/img/fond_chine3.jpg");
     background-size: cover;
     background-position: center;
     min-height: 100vh;
