@@ -60,11 +60,22 @@ header .lien:hover{
   color: #FF63E1;
 }
 
-header #btnextern{
+.btnextern{
   border:solid;
   border-radius: 20px;
   border-color: #FF63E1;
   background-color: #163767;
+  text-align: center;
+  color: white;
+  width: 10%;
+  padding: 10px 20px;
+
+  display: inline-block;
+  text-decoration: none;
+
+  line-height: normal;
+
+  background-image: url(../img/fond_chine2.jpg);
 
 }
 
@@ -163,3 +174,13 @@ th, td {
   border: 1px solid rgb(160 160 160);
 }
 
+tbody{
+  
+}
+
+
+/*image de fond */
+
+.imgfond{
+  width: 100%;
+}
