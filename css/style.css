@@ -174,6 +174,7 @@ th, td {
   border: 1px solid rgb(160 160 160);
 }
 
+<<<<<<< HEAD
 tbody{
   
 }
@@ -184,3 +185,63 @@ tbody{
 .imgfond{
   width: 100%;
 }
+=======
+/* A-propos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* SECTION PRINCIPALE */
+.hero {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+/* TITRES */
+.hero h1,
+.hero h2 {
+    color: #123a7a;
+}
+
+.hero h1 {
+    margin-bottom: 25px;
+}
+
+.hero h2 {
+    margin: 40px 0 25px;
+}
+
+/* BOITES */
+.box {
+    background-color: #eeeeee;
+    border: 3px solid #ff5fd2;
+    border-radius: 40px;
+    margin: 0 auto 60px;
+}
+
+/* INFO PROJET */
+.info-box {
+    width: 80%;
+    height: 130px;
+}
+
+/* EQUIPE */
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.team-box {
+    width: 300px;
+    height: 250px;
+}
+
+>>>>>>> 70b5b3a1b7392bc9f9f31da065a680f009c45d8e
