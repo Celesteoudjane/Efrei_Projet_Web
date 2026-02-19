@@ -74,10 +74,13 @@ header .lien:hover{
   text-decoration: none;
 
   line-height: normal;
-
-  background-image: url(../img/fond_chine2.jpg);
-
 }
+
+.contact{
+  background-image: url(../img/fond_chine2.jpg);
+} 
+
+
 
 /* carrousselle */
 
