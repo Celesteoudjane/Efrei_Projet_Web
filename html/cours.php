@@ -14,26 +14,36 @@
       <th scope="col">Nom du cour</th>
       <th scope="col">Niveau</th>
       <th scope="col">Intervenant</th>
+      <th scope="col">Salle</th>
+      <th scope="col">Modalité</th>
+
       
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Margaret Nguyen</th>
-      <td>427311</td>
-      <td><time datetime="2010-06-03">3 juin 2010</time></td>
+      <th scope="row">KMIMECH Mourad</th>
+      <td>B1</td>
+      <td>Gestion de versions</td>
+      <td>H112</td>
+      <td>Présentiel</td>
     
     </tr>
     <tr>
-      <th scope="row">Edvard Galinski</th>
-      <td>533175</td>
-      <td><time datetime="2011-01-13">13 janvier 2011</time></td>
+      <th scope="row">Chachoui Amir</th>
+      <td>B1</td>
+      <td>Base de données 1 : Concepts de base</td>
+      <td>B107</td>
+      <td>Présentiel</td>
     
     </tr>
     <tr>
-      <th scope="row">Hoshi Nakamura</th>
-      <td>601942</td>
-      <td><time datetime="2012-07-23">23 juillet 2012</time></td>
+      <th scope="row">BRESSON <Jean-Philippe></Jean-Philippe></th>
+      <td>B3</td>
+      <td>Droit</td>
+      <td>none</td>
+      <td>Distanciel</td>
+
     
     </tr>
   </tbody>
