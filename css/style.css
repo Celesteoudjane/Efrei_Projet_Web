@@ -5,14 +5,14 @@ body {
   font-family: sans-serif;
 }
 
-.footer {
+footer {
   background-color: #1f5bb5;
   color: white;
   text-align: center;
   font-family: Arial;
 }
 
-.footer-top {
+footer-top {
   display: flex;
   justify-content: space-between;
   padding: 15px;
@@ -286,13 +286,8 @@ th, td {
 }
 
 /* SECTION PRINCIPALE */
-<<<<<<< HEAD
 .propos {
     background-image: url("../img/fond_chine3.jpg");
-=======
-.hero {
-    background-image: url("/img/fond_chine3.jpg");
->>>>>>> 7cfe107618c1b54772e04b83fd9fa372831486bb
     background-size: cover;
     background-position: center;
     min-height: 100vh;
