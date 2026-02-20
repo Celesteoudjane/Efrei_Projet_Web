@@ -10,26 +10,36 @@
      <body>
         <h1>Ingénieur en mouvement "travaille travaille travaille" </h1>
         <div class="bigCarousel" >
+            <div class="mediumCarousel" >
 
         
             <ul class="carousel">
                 <li data-accName="Item 1">
 
-                    <img src="../img/carousselle/efrei_battiment1.jpg" alt="efrei_battiment1.jpg" class="img_car">
+                    <img id="img1" src="../img/carousselle/efrei_battiment1.jpg" alt="efrei_battiment1.jpg" class="img_car">
                 </li>
                 <li data-accName="Item 2">
 
-                    <img src="../img/carousselle/efrei_battiment2.jpg" alt="efrei_battiment2.jpg" class="img_car">
+                    <img id="img2" src="../img/carousselle/efrei_battiment2.jpg" alt="efrei_battiment2.jpg" class="img_car">
                 </li>
                 <li data-accName="Item 3">
 
-                    <img src="../img/carousselle/efrei_battiment3.jpg" alt="efrei_battiment3.jpg" class="img_car">
+                    <img id="img3" src="../img/carousselle/efrei_battiment3.jpg" alt="efrei_battiment3.jpg" class="img_car">
                 </li>
                 <li data-accName="Item 4">
 
-                    <img src="../img/carousselle/efrei_battiment4.jpg" alt="efrei_battiment4.jpg" class="img_car">
+                    <img id="img4" src="../img/carousselle/efrei_battiment4.jpg" alt="efrei_battiment4.jpg" class="img_car">
                 </li>
             </ul>
+
+            <div class="carousel-dots" >
+            <a href="#img1"></a>
+            <a href="#img2"></a>
+            <a href="#img3"></a>
+            <a href="#img4"></a>
+
+            </div>
+            </div>
             
             <div class="carouselTexte" >
             <p>Cet espace est dédié aux enseignants du Département Informatique de l'Efrei.
@@ -37,6 +47,7 @@
                 en un clic.</p>
                 </div>
         </div>
+
         <div>
             <h2>Département Informatique</h2>
             <p>Le département informatique de l’EFREI forme des étudiant·es aux métiers du numérique.
