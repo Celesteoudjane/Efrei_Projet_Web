@@ -17,7 +17,6 @@ footer-top {
   justify-content: space-between;
   padding: 15px;
   border-bottom: 2px solid #FF63E1;
-
 }
 
 
@@ -36,14 +35,14 @@ header .title {
   
 }
 
-header .ligne{
+ .ligne{
   border-block-end: solid;
   border-block-end-color:#FF63E1;
   writing-mode: horizontal-tb;
   margin-block-start: 0px;
 }
 
-header .links {
+ .links {
   display: flex;
   justify-content: space-between;
   vertical-align: baseline;
@@ -53,12 +52,11 @@ header .links {
   font-size: 20px;
 }
 
-header .lien{
+.lien{
   text-decoration: none;
   color: #FFFFFF;
 }
-
-header .lien:hover{
+.lien:hover{
   text-decoration: underline;
   color: #FF63E1;
 }
