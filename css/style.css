@@ -334,4 +334,96 @@ th, td {
     height: 250px;
 }
 
+/* nous-retouver*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* PAGE */
+.page {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 80px;
+    min-height: 100vh;
+    background-color: white;
+}
+
+/* CÔTÉ GAUCHE */
+.left {
+    width: 45%;
+}
+
+.horaire,
+.jours {
+    color: #123a7a;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+/* IMAGE MAP */
+.map {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* IMAGE ENTIÈRE */
+    display: block;
+     background-image: url("../img/maps_efrei.png");
+    
+}
+
+/* CÔTÉ DROIT */
+.right {
+    width: 45%;
+}
+
+/* TITRE */
+.right h1 {
+    color: #ff63e1;
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+/* BLOCS TEXTE */
+.bloc {
+    margin-bottom: 30px;
+}
+
+.bloc h2 {
+    color: #123a7a;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.bloc p {
+    color: #123a7a;
+    margin-bottom: 6px;
+}
+
+/* EMAIL */
+.email {
+    color: #1f5bb5;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .page {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        margin-bottom: 40px;
+    }
+}
+
 
