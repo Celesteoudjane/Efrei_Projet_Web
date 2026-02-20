@@ -7,17 +7,17 @@
 </head>    
     <?php include ("../include/header.php"); ?>
 
-     <body>
-        <h1>Ingénieur en mouvement "travaille travaille travaille" </h1>
+     <body >
+
+     <div class="accueil" >
+        <h1 class="devise" >Ingénieur en mouvement "travaille travaille travaille" </h1>
+
+
         <div class="bigCarousel" >
             <div class="mediumCarousel" >
 
         
             <ul class="carousel">
-                <li data-accName="Item 1">
-
-                    <img id="img1" src="../img/carousselle/efrei_battiment1.jpg" alt="efrei_battiment1.jpg" class="img_car">
-                </li>
                 <li data-accName="Item 2">
 
                     <img id="img2" src="../img/carousselle/efrei_battiment2.jpg" alt="efrei_battiment2.jpg" class="img_car">
@@ -33,7 +33,6 @@
             </ul>
 
             <div class="carousel-dots" >
-            <a href="#img1"></a>
             <a href="#img2"></a>
             <a href="#img3"></a>
             <a href="#img4"></a>
@@ -48,11 +47,13 @@
                 </div>
         </div>
 
-        <div>
+        <div class="info" >
             <h2>Département Informatique</h2>
             <p>Le département informatique de l’EFREI forme des étudiant·es aux métiers du numérique.
                 On y apprend à coder, créer des applications et comprendre les nouvelles technologies
                 comme l’IA ou la cybersécurité. C’est un endroit pour apprendre, pratiquer et préparer
                 son futur dans l’informatique</p>
+        </div>
+
         </div>
     </body>

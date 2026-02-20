@@ -5,21 +5,23 @@ body {
   font-family: sans-serif;
 }
 
-footer {
+.footer {
   background-color: #1f5bb5;
   color: white;
   text-align: center;
   font-family: Arial;
 }
 
-footer-top {
+.footer-top {
   display: flex;
   justify-content: space-between;
   padding: 15px;
   border-bottom: 2px solid #FF63E1;
 
 }
-/*header*/
+
+
+/* header */
 
 header {
   background-color: #1f5bb5;
@@ -78,7 +80,20 @@ header .lien:hover{
 }
 
 
+/* page index */
 
+.accueil{
+   background-image: url("../img/fond_chine1.jpeg");
+   width: 100%;
+  }
+
+
+.devise{
+  color: #ff5fd2;
+  text-align: center;
+  border-spacing: 10px 3rem;
+  
+}
 
 
 /* carrousselle */
@@ -92,6 +107,12 @@ header .lien:hover{
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    /* max-width: 500px; */
+
 }
 
 
@@ -139,10 +160,7 @@ header .lien:hover{
     transform: translateX(-50%);
     display: flex;
     gap: 12px;
-    /* background: rgba(255, 255, 255, 0.3);  */
     padding: 8px 15px;
-    /* border-radius: 20px; */
-    /* backdrop-filter: blur(5px); */
 }
 
 .carousel-dots a {
@@ -172,11 +190,44 @@ header .lien:hover{
 }
 
 .carouselTexte p {
-    font-size: 1.3rem; 
+    font-size: 25px; 
     line-height: 1.6;
     color:#123a7a;
     font-weight: 400;
+    font-weight: bold;
+
 }
+
+
+/* departement informatique */
+
+
+
+.info {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 25px;
+    border-radius: 15px;
+    
+    max-width: 1200px; 
+    margin: 20px auto; 
+    width: calc(100% - 40px); 
+    
+    box-sizing: border-box; 
+}
+
+.info h2 {
+    color: #123a7a;
+    margin-top: 0;
+}
+
+.info p {
+    color: #123a7a;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+
 
 
 /* tableau cours */
@@ -193,9 +244,6 @@ th, td {
 
 /*image de fond */
 
-.imgfond{
-  width: 100%;
-} 
 
 .formulaire{
   
@@ -238,8 +286,13 @@ th, td {
 }
 
 /* SECTION PRINCIPALE */
+<<<<<<< HEAD
 .propos {
     background-image: url("../img/fond_chine3.jpg");
+=======
+.hero {
+    background-image: url("/img/fond_chine3.jpg");
+>>>>>>> 7cfe107618c1b54772e04b83fd9fa372831486bb
     background-size: cover;
     background-position: center;
     min-height: 100vh;
