@@ -8,7 +8,6 @@
     <?php include ("../include/header.php"); ?>
 
     <body class="contact" >
-        <!-- <img src="../img/fond_chine2.jpg" alt="fonc_chine2.jpg" class="imgfond" > -->
 
 
         <div class="formulaire" >
