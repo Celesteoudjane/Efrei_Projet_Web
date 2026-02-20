@@ -13,7 +13,8 @@
         <div class="formulaire" >
         <h1>Contact</h1>
 
-         <div class="formulaire1">      
+         <div class="formulaire1">  
+            <div class="renseignement" >    
             <form action="formulaire.php" method="POST">
                 <div>
                     <label for="nom">Nom :</label><br>
@@ -21,7 +22,7 @@
                 </div>
                 <div>
                     <label for="nom">Prénom :</label><br>
-                    <input type="text" id="nom" name="user_fname" required >
+                    <input type="text" id="prenom" name="user_fname" required >
                 </div>
                 
                 <div>
@@ -34,14 +35,17 @@
                     <select type="statut" id="statut" name="user_statut" required >
                         <option>Intervenant Extern</option>
                         <option>Intervenant Intern</option>
+                        </select>
                 </div>
+
+                <div>
 
                 <div>
                     <label for="message">Message :</label><br>
                     <textarea  type="message"  id="message" name="user_mess"></textarea>
                 </div>
 
-                <button type="submit" class="btnextern" >Envoyer</button>
+                <button type="submit" class="btnextern" id="messcontact" >Envoyer</button>
             </form>
 </div>
 </div>
