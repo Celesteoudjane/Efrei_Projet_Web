@@ -17,7 +17,6 @@ body {
   justify-content: space-between;
   padding: 15px;
   border-bottom: 2px solid #FF63E1;
-
 }
 
 
@@ -36,14 +35,14 @@ header .title {
   
 }
 
-header .ligne{
+ .ligne{
   border-block-end: solid;
   border-block-end-color:#FF63E1;
   writing-mode: horizontal-tb;
   margin-block-start: 0px;
 }
 
-header .links {
+ .links {
   display: flex;
   justify-content: space-between;
   vertical-align: baseline;
@@ -285,13 +284,8 @@ th, td {
 }
 
 /* SECTION PRINCIPALE */
-<<<<<<< HEAD
 .propos {
     background-image: url("../img/fond_chine3.jpg");
-=======
-.hero {
-    background-image: url("/img/fond_chine3.jpg");
->>>>>>> 7cfe107618c1b54772e04b83fd9fa372831486bb
     background-size: cover;
     background-position: center;
     min-height: 100vh;
