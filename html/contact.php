@@ -8,17 +8,13 @@
     <?php include ("../include/header.php"); ?>
 
     <body class="contact" >
-        <img src="../img/fond_chine2.jpg" alt="fonc_chine2.jpg" class="imgfond" >
+        <!-- <img src="../img/fond_chine2.jpg" alt="fonc_chine2.jpg" class="imgfond" > -->
 
+
+        <div class="formulaire" >
         <h1>Contact</h1>
 
-         <div class="">
-        <div class="">
-
-
-        <!-- <p>fghjikoigf</p> -->
-        
-            <h2>Envoyez-moi un message</h2>
+         <div class="formulaire1">      
             <form action="formulaire.php" method="POST">
                 <div>
                     <label for="nom">Nom :</label><br>
@@ -35,21 +31,23 @@
                 </div>
 
                 <div>
-                    <label for="email">Statut :</label><br>
-                    <input type="statut" id="statut" name="user_statut" required >
+                    <label for="statut">Statut :</label><br>
+                    <select type="statut" id="statut" name="user_statut" required >
+                        <option>Intervenant Extern</option>
+                        <option>Intervenant Intern</option>
                 </div>
 
-                <div style="margin-bottom: 15px;">
+                <div>
                     <label for="message">Message :</label><br>
-                    <textarea id="message" name="user_mess" rows="5" ></textarea>
+                    <textarea  type="message"  id="message" name="user_mess"></textarea>
                 </div>
 
-                <button type="submit" class="btn" >Envoyer</button>
+                <button type="submit" class="btnextern" >Envoyer</button>
             </form>
-        </div>
+</div>
 </div>
 
 
     </body>
 
-    <?php include ("../include/footer.php"); ?>
+    <!-- <?php include ("../include/footer.php"); ?> -->
