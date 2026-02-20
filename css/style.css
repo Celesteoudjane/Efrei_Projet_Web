@@ -53,12 +53,11 @@ header .links {
   font-size: 20px;
 }
 
-header .lien{
+.lien{
   text-decoration: none;
   color: #FFFFFF;
 }
-
-header .lien:hover{
+.lien:hover{
   text-decoration: underline;
   color: #FF63E1;
 }
