@@ -285,8 +285,13 @@ th, td {
 }
 
 /* SECTION PRINCIPALE */
+<<<<<<< HEAD
+.propos {
+    background-image: url("../img/fond_chine3.jpg");
+=======
 .hero {
     background-image: url("/img/fond_chine3.jpg");
+>>>>>>> 7cfe107618c1b54772e04b83fd9fa372831486bb
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -295,16 +300,16 @@ th, td {
 }
 
 /* TITRES */
-.hero h1,
-.hero h2 {
+.propos h1,
+.propos h2 {
     color: #123a7a;
 }
 
-.hero h1 {
+.propos h1 {
     margin-bottom: 25px;
 }
 
-.hero h2 {
+.propos h2 {
     margin: 40px 0 25px;
 }
 
