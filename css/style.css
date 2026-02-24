@@ -336,7 +336,23 @@ select{
     
 }
 
+/* 1. Style de base pour tous les champs */
+input, select, textarea {
+    border: 2px solid #ff5fd2 !important;
+    border-radius: 15px !important;
+    width: 100% !important;
+    color: #123a7a !important;
+    padding: 10px !important;
+    box-sizing: border-box !important;
+    background-color: white !important;
+    
+    /* AJOUTE CECI : */
+    margin-bottom: 20px !important; /* Ajuste le nombre de pixels selon l'espace voulu */
+}
 
+.formulaire1 form div {
+    margin-bottom: 15px; /* Crée un espace entre chaque groupe (Label + Input) */
+}
 
 /* A-propos*/
 * {
