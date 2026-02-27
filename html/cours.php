@@ -50,4 +50,41 @@
 </table>
 
 
+                <button type="submit" class="btnextern">Ajouter un cours</button>
+
+
+                 <div class="nvcours" >
+
+         <div class="nvcours1">  
+            
+            <form action="formulaire.php" method="POST">
+          
+                <div>
+                    <label for="nom">Intervenant :</label><br>
+                    <input type="texte" id="nom" name="user_name" required >
+                </div>
+
+                <div>
+                    <label for="level">Niveau :</label><br>
+                    <select type="level" id="level" name="user_level" required >
+                      <option value="" disabled selected hidden>Choisir classe</option>
+                        <option>B1</option>
+                        <option>B2</option>
+                        <option>B3</option>
+                        </select>
+                </div>
+
+              
+
+                <div>
+                    <label for="name_course">Nom du cours :</label><br>
+                    <textarea  type="name_course"  id="name_course" name="user_course"></textarea>
+                </div>
+
+                <button type="submit" class="btnextern" id="messcontact" >Ajouter</button>
+            </form>
+</div>
+</div>
+
+
     </body>

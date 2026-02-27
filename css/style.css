@@ -336,23 +336,26 @@ select{
     
 }
 
-/* 1. Style de base pour tous les champs */
-input, select, textarea {
-    border: 2px solid #ff5fd2 !important;
-    border-radius: 15px !important;
-    width: 100% !important;
-    color: #123a7a !important;
-    padding: 10px !important;
-    box-sizing: border-box !important;
-    background-color: white !important;
+
+.formulaire1 {
+    display: flex; /* On s'assure que c'est en flex */
+    flex-direction: column; /* Les éléments les uns sous les autres */
+    gap: 20px !important; /* Crée 20px d'espace entre chaque DIV du formulaire */
     
-    /* AJOUTE CECI : */
-    margin-bottom: 20px !important; /* Ajuste le nombre de pixels selon l'espace voulu */
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    border: solid;
+    border-color: #ff5fd2;
+    color: #123a7a;
 }
 
 .formulaire1 form div {
-    margin-bottom: 15px; /* Crée un espace entre chaque groupe (Label + Input) */
+    margin-bottom: 15px !important; /* Force l'espace sous chaque bloc de saisie */
 }
+
 
 /* A-propos*/
 * {
@@ -504,5 +507,95 @@ input, select, textarea {
         margin-bottom: 40px;
     }
 }
+
+
+/* cours et formations  */
+
+td, th{
+    color: #123a7a;
+}
+
+table{
+    border-color: #123a7a;
+    
+}
+
+/*ajouter cours*/
+
+
+/* Le conteneur principal */
+.nvcours {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* Le rectangle blanc du formulaire */
+.nvcours1 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ff5fd2;
+    color: #123a7a;           
+    max-width: 900px;        
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+
+.nvcours1 label {
+    font-weight: bold;
+}
+
+/* Espacement des blocs de saisie */
+.nvcours1 form div {
+    margin-bottom: 20px !important;
+}
+
+/* Style unifié des champs */
+.nvcours1 input, 
+.nvcours1 select, 
+.nvcours1 textarea {
+    border: 2px solid #ff5fd2 !important;
+    border-radius: 15px !important;
+    width: 100% !important;
+    color: #123a7a !important; 
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    background-color: white !important;
+}
+
+.nvcours1 input, 
+.nvcours1 select {
+    height: 25px;  
+    padding: 5px 15px !important;
+}
+
+
+.nvcours1 input:focus, 
+.nvcours1 select:focus, 
+.nvcours1 textarea:focus {
+    outline: none !important;
+    border: 2px solid #FF63E1 !important; 
+}
+
+/* bloqué taille du nom du cours */
+#name_course {
+    resize: none !important; 
+    width: 100% !important;
+    max-width: 900px;
+    height: 70px !important; 
+    box-sizing: border-box;
+}
+
+.nvcours1 select {
+    height: 30px;  
+}
+
 
 
