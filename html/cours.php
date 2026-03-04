@@ -50,7 +50,7 @@
 </table>
 
 <div class="btn-wrapper">
-                  <button type="submit" class="btnextern">Ajouter un cours</button>
+                  <button type="submit" class="btnextern" id="btn-ouvrir-form" >Ajouter un cours</button>
 </div>
 
                  <div class="nvcours" >

@@ -638,6 +638,7 @@ main, section, .nvcours {
     justify-content: flex-start; 
     padding: 5px;
     box-sizing: border-box;
+    display: none;
 }
 
 /* Le rectangle blanc du formulaire */

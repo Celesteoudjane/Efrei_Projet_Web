@@ -56,3 +56,25 @@ document.querySelector('form').addEventListener('submit', function(e) {
     this.reset();
     alert("Cours ajouté avec succès !");
 });
+
+// On récupère le bouton et le formulaire
+const btnOuvrir = document.getElementById('btn-ouvrir-form');
+const sectionFormulaire = document.querySelector('.nvcours');
+
+if (btnOuvrir && sectionFormulaire) {
+    btnOuvrir.addEventListener('click', function() {
+        // Affiche le formulaire
+        sectionFormulaire.style.display = 'flex';
+        
+        // Fait défiler la page doucement vers le formulaire
+        sectionFormulaire.scrollIntoView({ behavior: 'smooth' });
+    });
+}
+
+// Optionnel : Refermer après l'ajout réussi
+document.querySelector('form').addEventListener('submit', function(e) {
+    // ... ton code d'ajout actuel ...
+    
+    // Ajoute cette ligne à la fin pour cacher le formulaire après l'ajout
+    sectionFormulaire.style.display = 'none';
+});
