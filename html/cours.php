@@ -11,9 +11,9 @@
         <table>
   <thead>
     <tr>
-      <th scope="col">Nom du cour</th>
-      <th scope="col">Niveau</th>
       <th scope="col">Intervenant</th>
+      <th scope="col">Niveau</th>
+      <th scope="col">Nom du cours</th>
       <th scope="col">Salle</th>
       <th scope="col">Modalité</th>
 
@@ -23,7 +23,7 @@
   <tbody>
     <tr>
       <th scope="row">KMIMECH Mourad</th>
-      <td>B1</td>
+      <td><span class="bagde-niveau b2">B2</span></td>
       <td>Gestion de versions</td>
       <td>H112</td>
       <td>Présentiel</td>
@@ -31,7 +31,7 @@
     </tr>
     <tr>
       <th scope="row">Chachoui Amir</th>
-      <td>B1</td>
+      <td><span class="badge-niveau b1">B1</span></td>
       <td>Base de données 1 : Concepts de base</td>
       <td>B107</td>
       <td>Présentiel</td>
@@ -39,7 +39,7 @@
     </tr>
     <tr>
       <th scope="row">BRESSON <Jean-Philippe></Jean-Philippe></th>
-      <td>B3</td>
+      <td><span class="badge-niveau b3">B3</span></td>
       <td>Droit</td>
       <td>none</td>
       <td>Distanciel</td>
@@ -49,9 +49,9 @@
   </tbody>
 </table>
 
-
-                <button type="submit" class="btnextern">Ajouter un cours</button>
-
+<div class="btn-wrapper">
+                  <button type="submit" class="btnextern">Ajouter un cours</button>
+</div>
 
                  <div class="nvcours" >
 
@@ -67,12 +67,31 @@
                 <div>
                     <label for="level">Niveau :</label><br>
                     <select type="level" id="level" name="user_level" required >
-                      <option value="" disabled selected hidden>Choisir classe</option>
+                      <option value="" disabled selected hidden>Choix niveau</option>
                         <option>B1</option>
                         <option>B2</option>
                         <option>B3</option>
                         </select>
                 </div>
+
+                <div>
+                    <label for="level">Modalité :</label><br>
+                    <select type="level" id="level" name="user_level" required >
+                      <option value="" disabled selected hidden>Choix Modalité</option>
+                        <option>Présentiel</option>
+                        <option>Distanciel</option>
+                        </select>
+                </div>
+
+                <div class="salle-container">
+    <label for="salle">Salle :</label><br>
+    <div class="salle-input-group">
+        <input type="text" id="salle" name="user_salle" placeholder="Ex: H112">
+        <label class="checkbox-label">
+            <input type="checkbox" id="no_salle" name="no_salle" value="none"> None
+        </label>
+    </div>
+</div>
 
               
 
@@ -86,5 +105,5 @@
 </div>
 </div>
 
-
+<script src="../js/cours.js"></script>
     </body>
