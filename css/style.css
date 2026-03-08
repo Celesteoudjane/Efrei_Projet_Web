@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: red;
 }
 
 footer {
@@ -354,6 +355,28 @@ select{
 
 .formulaire1 form div {
     margin-bottom: 15px !important; /* Force l'espace sous chaque bloc de saisie */
+}
+
+/* formumaire mess succes */
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #c3e6cb;
+    width: 100%;
+    box-sizing: border-box;
+
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 
