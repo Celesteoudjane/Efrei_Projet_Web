@@ -1,4 +1,4 @@
-// coché none
+// coche none
 document.addEventListener('DOMContentLoaded', function() {
     const checkboxNone = document.getElementById('no_salle');
     const inputSalle = document.getElementById('salle');
@@ -25,20 +25,19 @@ document.addEventListener('DOMContentLoaded', function() {
 document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault(); // Empêche la page de se recharger
 
-    // 1. Récupération des valeurs
+    // récupération des valeurs
     const intervenant = document.getElementById('nom').value;
     const niveau = document.getElementById('level').value;
     const cours = document.getElementById('name_course').value;
     const salle = document.getElementById('salle') ? document.getElementById('salle').value : "none";
     const modalite = document.getElementById('modalite') ? document.getElementById('modalite').value : "Présentiel";
 
-    // 2. Sélection du corps du tableau
     const tableBody = document.querySelector('table tbody');
 
     // nouvelle ligne
     const newRow = document.createElement('tr');
 
-    // selon le niveau, le badge change 
+    // badge niveau 
     let badgeClass = niveau.toLowerCase(); 
 
     newRow.innerHTML = `
@@ -57,24 +56,21 @@ document.querySelector('form').addEventListener('submit', function(e) {
     alert("Cours ajouté avec succès !");
 });
 
-// On récupère le bouton et le formulaire
+// bouton + formulaire 
 const btnOuvrir = document.getElementById('btn-ouvrir-form');
 const sectionFormulaire = document.querySelector('.nvcours');
 
 if (btnOuvrir && sectionFormulaire) {
     btnOuvrir.addEventListener('click', function() {
-        // Affiche le formulaire
+        // affiche le formulaire 
         sectionFormulaire.style.display = 'flex';
-        
-        // Fait défiler la page doucement vers le formulaire
         sectionFormulaire.scrollIntoView({ behavior: 'smooth' });
     });
 }
 
-// Optionnel : Refermer après l'ajout réussi
+// fermé après ajout 
 document.querySelector('form').addEventListener('submit', function(e) {
-    // ... ton code d'ajout actuel ...
     
-    // Ajoute cette ligne à la fin pour cacher le formulaire après l'ajout
+    // quand ajout cache formulaire 
     sectionFormulaire.style.display = 'none';
 });
