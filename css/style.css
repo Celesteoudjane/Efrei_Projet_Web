@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: red;
 }
 
 footer {
@@ -68,11 +69,17 @@ header .title {
   background-color: #163767;
   text-align: center;
   color: white;
-  width: 10%;
+
+  /* width: 10%; */
+  width: auto;
+  min-width: 120px;
   padding: 10px 20px;
 
   display: inline-block;
   text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  
 
   line-height: normal;
 }
@@ -81,7 +88,7 @@ header .title {
 /* page index */
 
 .accueil{
-   background-image: url("../img/fond_chine1.jpeg");
+   background-image: url("../img/fond_efrei.jpg");
    width: 100%;
   }
 
@@ -90,7 +97,8 @@ header .title {
   color: #ff5fd2;
   text-align: center;
   border-spacing: 10px 3rem;
-  
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 
@@ -221,7 +229,7 @@ header .title {
 
 .info p {
     color: #123a7a;
-    font-size: 1.1rem;
+    font-size: 20px;
     line-height: 1.5;
 }
 
@@ -257,23 +265,119 @@ th, td {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 20px;
 
   color: #ffffff;
-  padding: 2em;
-  text-align: center;
-  
+  padding: 5px;
+  text-align:left;  
 } 
 
 
 .formulaire1{
-  backdrop-filter: blur(5px);
+  background-color: white;
   padding: 20px;
   border-radius: 15px;
   width: 100%;
   max-width: 500px;
+  border: solid;
+  border-color: #ff5fd2;
+  color: #123a7a;
 }
 
+#messcontact{
+    margin-top: 15px;
+}
+
+#message{
+    resize: none;
+    width: 100%; 
+    height: 150px; 
+    box-sizing: border-box;
+}
+
+
+input{
+    border: solid;
+    border-color: #ff5fd2;
+    border-radius: 15px;
+    width: 100%;
+}
+
+input:focus{
+    border-color: #ff5fd2;
+}
+
+select{
+    border: solid;
+    border-color: #ff5fd2;
+    border-radius: 15px;
+    width: 100%;
+}
+
+textarea{
+    border: solid;
+    border-color: #ff5fd2;
+    border-radius: 15px;
+}
+
+.renseignement{
+    align-items: center;
+    text-align: left;
+}
+
+select{
+    color: #123a7a;
+}
+
+.formulaire h1{
+    color: #123a7a;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+.formulaire1 {
+    display: flex; /* On s'assure que c'est en flex */
+    flex-direction: column; /* Les éléments les uns sous les autres */
+    gap: 20px !important; /* Crée 20px d'espace entre chaque DIV du formulaire */
+    
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    border: solid;
+    border-color: #ff5fd2;
+    color: #123a7a;
+}
+
+.formulaire1 form div {
+    margin-bottom: 15px !important; /* Force l'espace sous chaque bloc de saisie */
+}
+
+/* formumaire mess succes */
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #c3e6cb;
+    width: 100%;
+    box-sizing: border-box;
+
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
 /* A-propos*/
 * {
@@ -612,5 +716,202 @@ h1 {
         width: 100%;
     }
 }
+
+
+/* cours et formations  */
+
+/* --- SECTION TABLEAU COURS ET FORMATIONS --- */
+
+
+
+
+.table-container {
+    transform: translateY(80px) !important;
+    
+    /* Optionnel : ajoute un peu de marge en bas pour éviter de chevaucher le footer */
+    margin-bottom: 100px !important;
+    width: 90%;           
+    max-width: 1200px; 
+    background-color: white;
+    border-radius: 15px;  
+    overflow: hidden;     
+    padding-top: 100px !important;
+    border: none !important;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    /* font-family: 'Arial', sans-serif; */
+}
+
+/* 2. Titres de colonnes */
+th, td {
+    margin:80px auto 20px !important;
+    text-align: left;
+    padding: 20px;        
+    color: #123a7a;       
+    vertical-align: middle;
+    /* On force la ligne fine pour tout le monde, même sous les profs */
+    border-bottom: 1px solid rgba(18, 58, 122, 0.822) !important; 
+    border-left: none;   
+    border-right: none;
+}
+
+
+thead th {
+    font-weight: bold;
+    border-bottom: 3px solid #091f42 !important; /* Ligne de titre un peu plus marquée */
+}
+
+tbody th {
+    font-weight: normal; 
+    border-bottom: 1px solid rgba(18, 58, 122, 0.842) !important;
+}
+
+/* 4. Supprime la ligne sur la dernière rangée pour l'arrondi */
+tr:last-child td, tr:last-child th {
+    border-bottom: none !important;
+}
+
+
+/* badges de niveau */
+.badge-niveau {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: white !important;
+    font-weight: bold;
+    font-size: 0.85em;
+    text-align: center;
+    min-width: 35px;
+}
+
+/* changer les couleur */
+.b1 { background-color: #e5a0a0; }
+.b2 { background-color: #666666; } 
+.b3 { background-color: #4a7c44; } 
+
+/* bouton a gauche  */
+.btn-wrapper {
+    width: 98%;
+    max-width: 1200px;
+    margin: 15px auto;
+    text-align: left; 
+}
+
+/* aligne input  */
+.salle-input-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+}
+
+#salle {
+    flex: 1; 
+    max-width: 280px !important;
+}
+
+/* Style de la case à cocher */
+.checkbox-label {
+    font-size: 0.9em;
+    color: #123a7a;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.checkbox-label input {
+    width: 18px !important; 
+    height: 18px !important;
+    cursor: pointer;
+}
+
+/*ajouter cours*/
+
+
+/* Le conteneur principal */
+
+main, section, .nvcours {
+    padding-top: 0px !important;
+}
+.nvcours {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    padding: 5px;
+    box-sizing: border-box;
+    display: none;
+}
+
+/* Le rectangle blanc du formulaire */
+.nvcours1 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ff5fd2;
+    color: #123a7a;           
+    max-width: 900px;        
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+
+.nvcours1 label {
+    font-weight: bold;
+}
+
+/* Espacement des blocs de saisie */
+.nvcours1 form div {
+    margin-bottom: 20px !important;
+}
+
+/* Style unifié des champs */
+.nvcours1 input, 
+.nvcours1 select, 
+.nvcours1 textarea {
+    border: 2px solid #ff5fd2 !important;
+    border-radius: 15px !important;
+    width: 100% !important;
+    color: #123a7a !important; 
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    background-color: white !important;
+}
+
+.nvcours1 input, 
+.nvcours1 select {
+    height: 25px;  
+    padding: 5px 15px !important;
+}
+
+
+.nvcours1 input:focus, 
+.nvcours1 select:focus, 
+.nvcours1 textarea:focus {
+    outline: none !important;
+    border: 2px solid #FF63E1 !important; 
+}
+
+/* bloqué taille du nom du cours */
+#name_course {
+    resize: none !important; 
+    width: 100% !important;
+    max-width: 900px;
+    height: 70px !important; 
+    box-sizing: border-box;
+}
+
+.nvcours1 select {
+    height: 30px;  
+}
+
 
 
