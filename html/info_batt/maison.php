@@ -8,6 +8,9 @@
     <?php include ("../../include/header.php"); ?>
 
      <body >
+        <div class="maison" >
         <h1>Maison</h1>
+        </div>
+
 
      </body>
