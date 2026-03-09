@@ -23,7 +23,7 @@
   <tbody>
     <tr>
       <th scope="row">KMIMECH Mourad</th>
-      <td><span class="bagde-niveau b2">B2</span></td>
+      <td><span class="badge-niveau b2">B2</span></td>
       <td>Gestion de versions</td>
       <td>H112</td>
       <td>Présentiel</td>

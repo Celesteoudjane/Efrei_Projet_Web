@@ -18,24 +18,29 @@
 
         
             <ul class="carousel">
-                <li data-accName="Item 3">
-
-                    <img id="img3" src="../img/carousselle/efrei_battiment3.jpg" alt="efrei_battiment3.jpg" class="img_car">
+                <li data-accName="Item 1">
+<a href="./info_batt/new_republic.php" target="_blank">
+                    <img id="img3" src="../img/carousselle/batt_new_republic.jpg" alt="batt_new_republic.jpg" class="img_car" >
+</a>
                 </li>
                 <li data-accName="Item 2">
+                    <a href="./info_batt/maison.php" target="_blank">
+                    <img id="img2" src="../img/carousselle/batt_maison.jpg" alt="batt_maison.jpg" class="img_car">
+               </a> </li>
 
-                    <img id="img2" src="../img/carousselle/efrei_battiment2.jpg" alt="efrei_battiment2.jpg" class="img_car">
                 </li>
-                <li data-accName="Item 4">
+                <li data-accName="Item 3">
+                    <a href="./info_batt/factory.php" target="_blank">
+                    <img id="img2" src="../img/carousselle/batt_factory.jpg" alt="batt_factory.jpg" class="img_car">
+               </a> </li>
 
-                    <img id="img4" src="../img/carousselle/efrei_battiment4.jpg" alt="efrei_battiment4.jpg" class="img_car">
-                </li>
+
             </ul>
 
             <div class="carousel-dots" >
-            <a href="#img3"></a>
+            <a href="#img1"></a>
             <a href="#img2"></a>
-            <a href="#img4"></a>
+            <a href="#img3"></a>
 
             </div>
             </div>

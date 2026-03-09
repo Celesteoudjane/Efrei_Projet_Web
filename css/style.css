@@ -775,9 +775,15 @@ tr:last-child td, tr:last-child th {
 }
 
 /* changer les couleur */
-.b1 { background-color: #00d2ff; }
-.b2 { background-color: #ff5fd2; } 
-.b3 { background-color: #9d50bb; } 
+.b1 { 
+    background-color: #00d2ff; 
+}
+.b2 { 
+    background-color: #ff5fd2; 
+} 
+.b3 { 
+    background-color: #9d50bb; 
+} 
 
 /* bouton a gauche  */
 .btn-wrapper {
@@ -901,4 +907,17 @@ main, section, .nvcours {
 }
 
 
+.maison{
+   background-image: url("../img/carousselle/batt_maison.jpg");
+   width: 100%;
+  }
+
+
+/* .devise{
+  color: #ff5fd2;
+  text-align: center;
+  border-spacing: 10px 3rem;
+  padding-bottom: 20px;
+  padding-top: 20px;
+} */
 
