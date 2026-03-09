@@ -5,24 +5,23 @@ document.addEventListener('DOMContentLoaded', function() {
         form.addEventListener('submit', function(e) {
             e.preventDefault(); 
 
-            // On évite les doublons si on clique plusieurs fois
+            // pas de double 
             const existingMsg = document.querySelector('.alert-success');
             if (existingMsg) existingMsg.remove();
 
-            // Création de l'élément
+            // crea de l'element 
             const successDiv = document.createElement('div');
             
-            // ON APPLIQUE LA CLASSE CSS ICI
+            // le css
             successDiv.classList.add('alert-success');
             
-            // LE TEXTE
+            // texte succes
             successDiv.innerText = "Votre message a bien été envoyé !";
 
-            // INSERTION DANS LE HTML
             const container = document.querySelector('.formulaire1');
             container.prepend(successDiv);
 
-            // RESET DU FORMULAIRE
+            // reset formulaire 
             form.reset();
         });
     }

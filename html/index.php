@@ -18,13 +18,13 @@
 
         
             <ul class="carousel">
-                <li data-accName="Item 2">
-
-                    <img id="img2" src="../img/carousselle/efrei_battiment2.jpg" alt="efrei_battiment2.jpg" class="img_car">
-                </li>
                 <li data-accName="Item 3">
 
                     <img id="img3" src="../img/carousselle/efrei_battiment3.jpg" alt="efrei_battiment3.jpg" class="img_car">
+                </li>
+                <li data-accName="Item 2">
+
+                    <img id="img2" src="../img/carousselle/efrei_battiment2.jpg" alt="efrei_battiment2.jpg" class="img_car">
                 </li>
                 <li data-accName="Item 4">
 
@@ -33,8 +33,8 @@
             </ul>
 
             <div class="carousel-dots" >
-            <a href="#img2"></a>
             <a href="#img3"></a>
+            <a href="#img2"></a>
             <a href="#img4"></a>
 
             </div>
