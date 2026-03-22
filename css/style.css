@@ -927,6 +927,7 @@ main, section, .nvcours {
     height: 30px;  
 }
 
+/*page info batt*/
 
 .maison{
    background-image: url("../img/carousselle/batt_maison.jpg");
@@ -946,4 +947,43 @@ main, section, .nvcours {
 .aquarium{
     background-image: url("../img/carousselle/");
     width: 100%;
+}
+
+.aquarium , .factory , .newRepublic , .maison{
+
+    min-height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    width: 100%;
+}
+
+li{ color:#123a7a;
+}
+
+#infobatt{
+text-align: center;
+width: fit-content;
+    
+    margin: 20px auto; 
+    padding: 30px 50px;
+}
+
+#infobatt li{
+    color: #123a7a;
+    list-style-type: none;
+}
+
+.titre{
+    font-weight: bold;
+}
+
+.prat , li {
+    font-size: 1.2rem;
+}
+
+#tbatt{
+    color: #ff5fd2 !important;
 }
