@@ -2,7 +2,7 @@
 $host = "localhost";
 $dbname = "projet_web_efrei"; 
 $username = "root";
-$password = ""; 
+$password = "root"; 
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);

@@ -95,13 +95,18 @@ header .title {
   }
 
 
-.devise{
+
+.devise {
   color: #ff5fd2;
   text-align: center;
-  border-spacing: 10px 3rem;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  font-weight: bold;
+  font-size: 2.2rem;
+  padding: 30px 0;
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
 }
+
+
+
 
 
 /* carrousselle */
@@ -204,6 +209,20 @@ header .title {
 
 }
 
+/* plus de flou pour le texte */
+.carouselTexte, .info {
+
+    background: rgba(255, 255, 255, 0.3) !important; 
+    
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px);
+    
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
 /* departement informatique */
 /* texte + flou */
 .info {
@@ -231,16 +250,7 @@ header .title {
 }
 
 
-/* tableau cours */ /* C EST QUOI CE TRUC !!!!!!!!*/
 
-/* table {
-  border: 2px solid rgb(140 140 140);
-}
-
-th, td {
-  border: 1px solid rgb(160 160 160);
-} */
-  
 
 /* page formulaire contact */
 /*image de fond */
@@ -248,7 +258,8 @@ th, td {
 .formulaire{
   
  
-  background-image: url(../img/fond_chine2.jpg) ;
+  /* background-image: url(../img/fond_chine2.jpg) ; */
+  background-image: url(../img/asso3.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -296,6 +307,10 @@ input{
     border-color: #ff5fd2;
     border-radius: 15px;
     width: 100%;
+
+    padding-left: 15px;   
+    outline: none;        
+    box-sizing: border-box;
 }
 
 input:focus{
@@ -313,6 +328,10 @@ textarea{
     border: solid;
     border-color: #ff5fd2;
     border-radius: 15px;
+
+    padding: 10px 15px;   
+    outline: none;        
+    box-sizing: border-box;
 }
 
 .renseignement{
@@ -350,6 +369,8 @@ select{
 .formulaire1 form div {
     margin-bottom: 15px !important; 
 }
+
+
 
 /* formumaire mess succes */
 
@@ -912,12 +933,17 @@ main, section, .nvcours {
    width: 100%;
   }
 
+.newRepublic{
+    background-image: url("../img/carousselle/batt_new_republic.jpg");
+    width: 100%;
+}
 
-/* .devise{
-  color: #ff5fd2;
-  text-align: center;
-  border-spacing: 10px 3rem;
-  padding-bottom: 20px;
-  padding-top: 20px;
-} */
+.factory{
+    background-image: url("../img/carousselle/batt_factory.jpg");
+    width: 100%;
+}
 
+.aquarium{
+    background-image: url("../img/carousselle/");
+    width: 100%;
+}

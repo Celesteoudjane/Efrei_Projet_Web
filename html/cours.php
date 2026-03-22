@@ -66,7 +66,7 @@
 
                 <div>
                     <label for="level">Niveau :</label><br>
-                    <select type="level" id="level" name="user_level" required >
+                    <select  id="level" name="user_level" required >
                       <option value="" disabled selected hidden>Choix niveau</option>
                         <option>B1</option>
                         <option>B2</option>
@@ -76,7 +76,7 @@
 
                 <div>
                     <label for="level">Modalité :</label><br>
-                    <select type="level" id="level" name="user_level" required >
+                    <select  id="modalite" name="user_modalite" required >
                       <option value="" disabled selected hidden>Choix Modalité</option>
                         <option>Présentiel</option>
                         <option>Distanciel</option>

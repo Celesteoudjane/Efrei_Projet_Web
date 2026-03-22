@@ -50,7 +50,7 @@
 </div>
 </div>
  </body>
- <!-- <?php include ("../include/footer.php"); ?> -->
+
   
 
 <script src="../js/contact.js"></script>
