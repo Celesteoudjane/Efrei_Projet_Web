@@ -945,7 +945,7 @@ main, section, .nvcours {
 }
 
 .aquarium{
-    background-image: url("../img/carousselle/");
+    background-image: url("../img/carousselle/batt_aquarium.jpg");
     width: 100%;
 }
 
@@ -986,32 +986,35 @@ width: fit-content;
 
 #tbatt{
     color: #ff5fd2 !important;
-    /* margin-top: 1em; */
+    padding: 10px; 
 }
 
 
 
-/* Media Query pour les écrans de moins de 768px (tablettes et mobiles) */
+/* pour les telephone */
 @media (max-width: 768px) {
     
     header {
-        padding: 15px 0; /* Un peu d'espace en haut et en bas */
+        padding: 15px 0; /* espace en haut en bas */
     }
 
+    /* on empile les liens , on enlève la marge et on les centre */
     .links {
-        flex-direction: column; /* On empile les liens verticalement */
-        margin-right: 0;        /* On enlève ta marge de 70px qui décentre tout */
-        gap: 15px;              /* On crée un espace régulier entre chaque lien */
-        text-align: center;     /* On centre le texte */
+        flex-direction: column; 
+        margin-right: 0;        
+        gap: 15px;              
+        text-align: center;     
         padding: 10px 0;
     }
 
+    /* le bouton est plus large et il est centré */
     .btnextern {
-        width: 80%;             /* Le bouton prend plus de place sur mobile */
-        margin: 10px auto;      /* Centrage du bouton */
+        width: 80%;             
+        margin: 10px auto;      
     }
 
+    /* reduit taille */
     header .title {
-        font-size: 1.5rem;      /* On réduit un peu la taille du titre */
+        font-size: 1.5rem;      
     }
 }

@@ -34,6 +34,12 @@
                     <img id="img2" src="../img/carousselle/batt_factory.jpg" alt="batt_factory.jpg" class="img_car">
                </a> </li>
 
+                </li>
+                <li data-accName="Item 4">
+                    <a href="./info_batt/aquarium.php" target="_blank">
+                    <img id="img2" src="../img/carousselle/batt_aquarium.jpg" alt="batt_aquarium.jpg" class="img_car">
+               </a> </li>
+
 
             </ul>
 
@@ -41,6 +47,7 @@
             <a href="#img1"></a>
             <a href="#img2"></a>
             <a href="#img3"></a>
+            <a href="#img4"></a>
 
             </div>
             </div>
