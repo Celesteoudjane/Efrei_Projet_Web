@@ -15,7 +15,7 @@
         <h2>Horaire : 7h00 -21h00</h2>
         <p>Du lundi au vendredi</p>
 
-        <img src="/Efrei_Projet_Web/img/carouselle/maps_efrei.png" class="map">
+        <img id="img M "  src="../img/carouselle/maps_efrei.png" class="map">
         
     </div>
 

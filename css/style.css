@@ -660,10 +660,11 @@ th, td {
     color: #1c355e;
 }
 
-.map {
-   width: 400px;
+map {
+    width: 400px;
     display: block;
     margin-top: 20px;
+    
 }
 
 /* DROITE */

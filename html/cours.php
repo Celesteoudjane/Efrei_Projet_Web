@@ -107,3 +107,4 @@
 
 <script src="../js/cours.js"></script>
     </body>
+    <?php include ("../include/footer.php"); ?>
