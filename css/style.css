@@ -5,21 +5,50 @@ body {
   font-family: sans-serif;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 /* footer */
+
+/* forcer les couleur footer  */
+footer, 
+.footer-top, 
+.footer-bottom {
+    background-color: #1f5bb5 !important;
+    background-image: none !important;    /* pas de degradé */
+    color: white !important;
+}
+
 footer {
-  background-color: #1f5bb5;
   color: white;
   text-align: center;
   font-family: Arial;
+  flex-shrink: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  box-sizing: border-box; 
+  flex-shrink: 0;
 }
 
-footer-top {
+.footer-top {
   display: flex;
   justify-content: space-between;
   padding: 15px;
   border-bottom: 2px solid #FF63E1;
 }
+
+main, .formulaire, .accueil, .propos, .nvcours1 {
+    flex: 1 0 auto;
+}
+
 
 
 /* header */
@@ -39,20 +68,20 @@ header .title {
 
 /* gestion des lien */
  .ligne{
-  border-block-end: solid;
-  border-block-end-color:#FF63E1;
-  writing-mode: horizontal-tb;
-  margin-block-start: 0px;
+  border-block-end: solid !important;
+  border-block-end-color:#FF63E1 !important;
+  writing-mode: horizontal-tb !important;
+  margin-block-start: 0px !important;
 }
 
  .links {
-  display: flex;
-  justify-content: space-between;
-  vertical-align: baseline;
-  align-items: center;
-  margin-right: 70px;
-  font-weight: bold;
-  font-size: 20px;
+  display: flex !important;
+  justify-content: space-between !important;
+  vertical-align: baseline !important;
+  align-items: center !important;
+  margin-right: 70px !important;
+  font-weight: bold !important;
+  font-size: 20px !important;
 }
 
 .lien{
@@ -272,6 +301,8 @@ header .title {
   align-items: center;
   justify-content: flex-start;
   padding-top: 20px;
+  /* padding-bottom: 80px !important;
+  margin-bottom: 40px !important; */
 
   color: #ffffff;
   padding: 5px;
@@ -480,10 +511,10 @@ select{
 }
 
 /* EQUIPE */
-body {
+/* body {
     font-family: Arial;
     background: white;
-}
+} */
 
 /* CONTENEUR */
 .container {
@@ -560,7 +591,7 @@ td {
 }
 
 /* IMAGE */
-img {
+.section-content img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -744,8 +775,17 @@ th, td {
     text-align: left;
 }
 
-img {
+/* uniquement pour equipe  */
+.section-content img, .table td img {
     border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+/* Force pour le caroussel  */
+.carousel img {
+    border-radius: 0 !important; 
 }
 /* MAIN */
 main {
@@ -1132,6 +1172,8 @@ width: fit-content;
 #tbatt{
     color: #ff5fd2 !important;
     padding: 10px; 
+    text-align: center;
+    width: 100%;
 }
 
 
@@ -1162,4 +1204,14 @@ width: fit-content;
     header .title {
         font-size: 1.5rem;      
     }
+}
+
+
+/* reglage style insta footer */
+.logo-insta {
+    width: 25px !important; 
+    height: 25px !important;
+    display: inline-block !important; 
+    border-radius: 0 !important; 
+    vertical-align: middle;
 }

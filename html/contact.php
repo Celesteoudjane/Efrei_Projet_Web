@@ -49,11 +49,16 @@
             </form>
 </div>
 </div>
- </body>
+</div>
 
   
 
 <script src="../js/contact.js"></script>
-    </body>
+    
 
+<footer>
+  <?php include ("../include/footer.php"); ?>
+  </footer>
 
+  </body>
+  </html>
