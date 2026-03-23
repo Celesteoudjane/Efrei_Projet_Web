@@ -986,4 +986,32 @@ width: fit-content;
 
 #tbatt{
     color: #ff5fd2 !important;
+    /* margin-top: 1em; */
+}
+
+
+
+/* Media Query pour les écrans de moins de 768px (tablettes et mobiles) */
+@media (max-width: 768px) {
+    
+    header {
+        padding: 15px 0; /* Un peu d'espace en haut et en bas */
+    }
+
+    .links {
+        flex-direction: column; /* On empile les liens verticalement */
+        margin-right: 0;        /* On enlève ta marge de 70px qui décentre tout */
+        gap: 15px;              /* On crée un espace régulier entre chaque lien */
+        text-align: center;     /* On centre le texte */
+        padding: 10px 0;
+    }
+
+    .btnextern {
+        width: 80%;             /* Le bouton prend plus de place sur mobile */
+        margin: 10px auto;      /* Centrage du bouton */
+    }
+
+    header .title {
+        font-size: 1.5rem;      /* On réduit un peu la taille du titre */
+    }
 }

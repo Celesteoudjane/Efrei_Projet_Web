@@ -23,9 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault(); // Empêche la page de se recharger
+    e.preventDefault(); 
+    // Empeche la page de se recharger
 
-    // récupération des valeurs
+    // recupération des valeurs
     const intervenant = document.getElementById('nom').value;
     const niveau = document.getElementById('level').value;
     const cours = document.getElementById('name_course').value;
@@ -68,7 +69,7 @@ if (btnOuvrir && sectionFormulaire) {
     });
 }
 
-// fermé après ajout 
+// ferme apres ajout 
 document.querySelector('form').addEventListener('submit', function(e) {
     
     // quand ajout cache formulaire 
