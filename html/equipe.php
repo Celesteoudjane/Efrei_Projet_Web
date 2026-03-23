@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Equipe Enseignante</title>
-    <link href="../css/style.css" rel="stylesheet" />
-</head>    
-    <?php include ("../include/header.php"); ?>
-    <body>
+<meta charset="UTF-8">
+<title>Recherche Enseignant</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+ <?php include ("../include/header.php"); ?>
+<body>
+<div class="container">
 
-<main class="page">
+    <h2>Recherche un Enseignant</h2>
 
-    <!-- TITRE -->
-    <h1>Recherche un Enseignant</h1>
-
-    <!-- BARRE DE RECHERCHE -->
+    <!-- BARRE RECHERCHE -->
     <div class="search-box">
-        <input type="text" placeholder="">
-        <span class="search-icon">🔍</span>
+        <input type="text">
     </div>
 
-    <!-- BLOCS INTERVENANTS -->
-    <div class="dropdown">
-        <span>Intervenant extern</span>
-        <span class="arrow">V</span>
+    <!-- EXTERN -->
+    <div class="section">
+        <div class="header">Intervenant extern <span>▼</span></div>
+
+        <div class="content">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Matière</th>
+                </tr>
+                <tr>
+                    <td><div class="circle"></div></td>
+                    <td>Durand</td>
+                    <td>Paul</td>
+                    <td>Réseaux</td>
+                </tr>
+            </table>
+        </div>
     </div>
 
-    <div class="dropdown">
-        <span>Intervenant intern</span>
-        <span class="arrow">V</span>
+    <!-- INTERN -->
+    <div class="section">
+        <div class="header">Intervenant intern <span>▼</span></div>
+
+        <div class="content">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Matière</th>
+                </tr>
+                <tr>
+                    <td><div class="circle"></div></td>
+                    <td>Martin</td>
+                    <td>Claire</td>
+                    <td>Dev Web</td>
+                </tr>
+                <tr>
+                    <td><div class="circle"></div></td>
+                    <td>Dupont</td>
+                    <td>Jean</td>
+                    <td>Reseaux</td>
+                </tr>
+            </table>
+        </div>
     </div>
 
-    <!-- TABLEAU -->
-    <div class="table">
+</div>
 
-        <div class="row header">
-            <span class="circle"></span>
-            <span>Nom</span>
-            <span>Prénom</span>
-            <span>Matière</span>
-        </div>
-
-        <div class="row">
-            <span class="circle"></span>
-        </div>
-
-        <div class="row">
-            <span class="circle"></span>
-        </div>
-
-        <div class="row">
-            <span class="circle"></span>
-        </div>
-
-    </div>
-
-</main>
-
+<equipe src="../js/equipe.js"></equipe>
 </body>
 <?php include ("../include/footer.php"); ?>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
-    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css">
 </head>    
     <?php include ("../include/header.php"); ?>
 
