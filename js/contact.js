@@ -5,25 +5,39 @@ document.addEventListener('DOMContentLoaded', function() {
         form.addEventListener('submit', function(e) {
             e.preventDefault(); 
 
-            // On évite les doublons si on clique plusieurs fois
-            const existingMsg = document.querySelector('.alert-success');
-            if (existingMsg) existingMsg.remove();
-
-            // Création de l'élément
-            const successDiv = document.createElement('div');
             
-            // ON APPLIQUE LA CLASSE CSS ICI
-            successDiv.classList.add('alert-success');
-            
-            // LE TEXTE
-            successDiv.innerText = "Votre message a bien été envoyé !";
+            const formData = new FormData(form);
 
-            // INSERTION DANS LE HTML
-            const container = document.querySelector('.formulaire1');
-            container.prepend(successDiv);
+        
+            fetch('formulaire.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                
+                console.log("Réponse du serveur :", data);
+                
+                // mess vert
+                const existingMsg = document.querySelector('.alert-success');
+                if (existingMsg) existingMsg.remove();
 
-            // RESET DU FORMULAIRE
-            form.reset();
+                const successDiv = document.createElement('div');
+                successDiv.classList.add('alert-success');
+                successDiv.innerText = "Votre message a bien été envoyé !";
+
+                const container = document.querySelector('.formulaire1');
+                if (container) {
+                    container.prepend(successDiv);
+                }
+
+                // vide les champ du formulaire 
+                form.reset();
+            })
+            .catch(error => {
+                console.error("Erreur lors de l'envoi:", error);
+                alert("Une erreur est survenue lors de l'envoi.");
+            });
         });
     }
 });

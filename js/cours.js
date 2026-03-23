@@ -23,15 +23,16 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault(); // Empêche la page de se recharger
+    e.preventDefault(); 
+    // Empeche la page de se recharger
 
-    // récupération des valeurs
+    // recupération des valeurs
     const intervenant = document.getElementById('nom').value;
     const niveau = document.getElementById('level').value;
     const cours = document.getElementById('name_course').value;
     const salle = document.getElementById('salle') ? document.getElementById('salle').value : "none";
-    const modalite = document.getElementById('modalite') ? document.getElementById('modalite').value : "Présentiel";
-
+const modaliteSelect = document.getElementById('modalite');
+const modalite = modaliteSelect ? modaliteSelect.value : "Non défini";
     const tableBody = document.querySelector('table tbody');
 
     // nouvelle ligne
@@ -41,9 +42,9 @@ document.querySelector('form').addEventListener('submit', function(e) {
     let badgeClass = niveau.toLowerCase(); 
 
     newRow.innerHTML = `
-        <td>${cours}</td>
-        <td><span class="badge-niveau ${badgeClass}">${niveau}</span></td>
         <td>${intervenant}</td>
+        <td><span class="badge-niveau ${badgeClass}">${niveau}</span></td>
+        <td>${cours}</td>
         <td>${salle}</td>
         <td>${modalite}</td>
     `;
@@ -68,7 +69,7 @@ if (btnOuvrir && sectionFormulaire) {
     });
 }
 
-// fermé après ajout 
+// ferme apres ajout 
 document.querySelector('form').addEventListener('submit', function(e) {
     
     // quand ajout cache formulaire 

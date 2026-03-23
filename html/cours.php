@@ -23,7 +23,7 @@
   <tbody>
     <tr>
       <th scope="row">KMIMECH Mourad</th>
-      <td><span class="bagde-niveau b2">B2</span></td>
+      <td><span class="badge-niveau b2">B2</span></td>
       <td>Gestion de versions</td>
       <td>H112</td>
       <td>Présentiel</td>
@@ -66,7 +66,7 @@
 
                 <div>
                     <label for="level">Niveau :</label><br>
-                    <select type="level" id="level" name="user_level" required >
+                    <select  id="level" name="user_level" required >
                       <option value="" disabled selected hidden>Choix niveau</option>
                         <option>B1</option>
                         <option>B2</option>
@@ -76,7 +76,7 @@
 
                 <div>
                     <label for="level">Modalité :</label><br>
-                    <select type="level" id="level" name="user_level" required >
+                    <select  id="modalite" name="user_modalite" required >
                       <option value="" disabled selected hidden>Choix Modalité</option>
                         <option>Présentiel</option>
                         <option>Distanciel</option>
