@@ -11,5 +11,5 @@
 <div class="footer-bottom">
      <a href="https://www.instagram.com/efrei_paris?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
    <img src="/Efrei_Projet_Web/img/logo_insta.png" alt="logo_insta.png" class="logo-insta">
-     <a href="../../nous-retrouver.php" class="lien">nous-retrouver</a>
+     <a href="/Efrei_Projet_Web/html/nous-retrouver.php" class="lien" target="_blank">nous-retrouver</a>
 </footer>

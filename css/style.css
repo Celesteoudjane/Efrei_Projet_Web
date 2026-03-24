@@ -45,10 +45,17 @@ footer {
   border-bottom: 2px solid #FF63E1;
 }
 
-main, .formulaire, .accueil, .propos, .nvcours1 {
-    flex: 1 0 auto;
+
+main:not(.nvcours), .accueil, .propos { 
+    flex: 1 0 auto; 
 }
 
+
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+}
 
 
 /* header */
@@ -685,6 +692,7 @@ th, td {
 /* GAUCHE */
 .left {
     width: 45%;
+    margin-top: 20px;
 }
 
 .left h2 {
@@ -700,6 +708,7 @@ map {
 
 /* DROITE */
 .right {
+    margin-top: 20px;
     width: 45%;
 }
 
@@ -717,6 +726,10 @@ map {
     margin-bottom: 10px;
     color: #1c355e;
 }
+
+
+
+
 
 /*equipe*/
 body {
@@ -850,21 +863,8 @@ h1 {
     border-radius: 50%;
 }
 
-/* FOOTER */
-.footer-top {
-    background: #0d2b4d;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-}
 
-.footer-bottom {
-    background: #1e3a5f;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
+
 
 /* BLOCS INTERVENANTS */
 .dropdown {
@@ -1215,3 +1215,28 @@ width: fit-content;
     border-radius: 0 !important; 
     vertical-align: middle;
 }
+
+
+/* .nvcours {
+    /* On enlève le !important du display 
+    display: none; 
+    
+    /* On garde le reste pour le look une fois affiché 
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: calc(100vh - 150px); 
+}
+.nvcours1 {
+    margin-bottom: 30px; /* Espace entre le bouton et le bas du cadre 
+}
+
+.nvcours, .formulaire {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 150px) !important; /* On retire la hauteur du header/footer 
+    padding-bottom: 40px !important; /* Zone de sécurité 
+    margin-bottom: 0 !important;
+} */

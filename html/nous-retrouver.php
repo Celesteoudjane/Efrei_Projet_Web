@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Contact</title>
+    <title>Nous retrouver</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
  <?php include ("../include/header.php"); ?>
@@ -15,7 +15,7 @@
         <h2>Horaire : 7h00 -21h00</h2>
         <p>Du lundi au vendredi</p>
 
-        <img id="img M "  src="../img/carouselle/maps_efrei.png" class="map">
+        <img src="../img/carouselle/maps_efrei.png" class="map-contact" alt="Plan Efrei">
         
     </div>
 
